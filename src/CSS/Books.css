@@ -1,0 +1,159 @@
+.booksContainer{
+    margin: 40px;
+    padding: 20px;
+}
+
+.booksSection1 p{
+    padding: 10px;
+    font-size:24px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.booksSection1{
+    height: 540px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.books{
+    display: flex;
+    justify-content: center;
+}
+.books img{
+    filter:blur(3px);
+    margin: 40px;
+    width: 250px;
+    height: 300px;
+    border-radius:50px;
+    object-fit: cover;
+    -webkit-box-shadow: 10px 10px 17px 4px rgba(255,255,255,1);
+-moz-box-shadow: 10px 10px 17px 4px rgba(255,255,255,1);
+box-shadow: 10px 10px 17px 4px rgba(255,255,255,1);
+}
+
+.books img:hover{
+  animation: blur 1s;
+  animation-fill-mode: forwards;
+}
+.booksSection1  p:nth-child(2){
+    position: absolute;
+    top: 80px;
+    left: 40%;
+    font-size: 24px;
+    font-family: 'Playfair Display', serif;
+}
+@keyframes blur {
+    from{
+        filter: blur(3px);
+    }to{
+        filter: blur(0px);
+    }
+}
+.allBooksContainer{
+    border-radius: 50px;
+    margin: 70px;
+    padding: 30px;
+}
+
+.allBooksContainer p:nth-child(1){
+    font-family: 'Rajdhani', sans-serif;
+    text-align: center;
+    font-size: 34px;
+    font-style: bold;
+}
+.allBooksList{
+    margin: 20px;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-around;
+    justify-content: space-around;
+}
+
+.allBooksList::-webkit-scrollbar{
+    display: none;
+}
+
+.BookCard{
+    margin: 30px;
+    width: 350px;
+    height: 350px;
+    background-color: black;
+    padding: 30px 0px 20px 20px;
+    border-radius: 20px;
+    box-shadow: -15px 0px 18px rgb(0, 0, 0);
+    border: 10px solid white;
+    border-left: none;
+}
+.BookImg img{
+    width: 300px;
+    height: 200px;
+    object-fit: contain;
+}
+
+@media screen  and (max-width:960px){
+    .allBooksList{
+        height: 80%;
+    }
+}
+
+.title{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: burlywood;
+}
+/* SEARCH BAR STYLES*/
+
+
+.searchContainer{
+    height: 1500px;
+    border-radius: 50px;
+    margin: 40px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.searchContainer p:nth-child(1){
+    position: absolute;
+    top: 20px;
+    text-align: center;
+    color: transparent;
+    background-clip:text;
+    background-image: url("../images/top.webp");
+    background-position: 150px;
+    font-size: 70px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.searchContainer p:nth-child(2){
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.searchContainer p:nth-child(3){
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.searchContainer input{
+    width: 300px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 4px solid;
+}
+.searchContainer input:focus{
+    outline: none;
+}
+
+.searchBookWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    flex-wrap:wrap;
+}
+
+

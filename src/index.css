@@ -1,13 +1,336 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script:wght@400;500&family=Montserrat:wght@100;500;800&family=Playfair+Display:ital,wght@1,500;1,800&family=Rajdhani&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style-type: none;
+}
+:root{
+    --linkText:#2C1810;
+    --text : #f4c37b;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+    background-color: #f4c37b;
+}
+
+
+/*NAV-BAR-STYLES*/
+
+.Nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px;
+}
+
+.TitleLogo span{
+    font-size: 34px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px 10px 0px 20px;
+}
+.TitleLogo a{
+    color: var(--linkText);
+}
+.Nav-links ul{
+    display: flex;
+}
+.Nav-links ul li a{
+    margin: 50px;
+    color: var(--linkText);
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 25px;
+}
+.Nav-links ul li a:hover{
+    animation: borderInc 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes borderInc {
+    from{
+        border-bottom: 0px;
+    }to{
+        color: white;
+        border-bottom: 1px solid black;
+    }
+}
+
+.user{
+    color: var(--linkText);
+}
+
+.user:hover{
+    color: white;
+}
+
+
+/*HOME-PAGE STYLES*/
+
+
+.homeContainer{
+    padding: 50px;
+}
+.homeSection1{
+    display: flex;
+    padding: 50px;
+    border-radius: 30px;
+}
+
+.homeTextWrapper pre{
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+}
+.homeTextWrapper{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.homeTextWrapper p{
+    font-family: 'Cedarville Cursive', cursive;
+    line-height: 30px;
+    word-spacing: 7px;
+    font-size: 24px;
+
+}
+
+
+.section1Img{
+    border-radius:35px;
+    width: 700px;
+    margin: 40px;
+    filter: grayscale(1);
+}
+
+
+.homeSection1:hover .section1Img{
+    filter: grayscale(0);
+}
+.homeSection2{
+    margin-top:50px;
+    border-radius: 30px;
+    height: 800px;
+    position: relative;
+}
+
+.booksPic{
+    position: absolute;
+    width: 500px;
+    right: 200px;
+    top: 100px;
+    z-index: 2;
+}
+.readPic{
+    width:400px;
+    height: 400px;
+    object-fit: contain;
+    position: absolute;
+    top:300px;
+    right: 500px;
+    z-index: 1;
+}
+.quote1{
+    position: absolute;
+    top: 400px;
+    left: 20px;
+    font-size: 25px;
+}
+.exploreButton{
+    width: 200px;
+    background-color: transparent;
+    padding: 20px;
+    font-size:15px;
+    height: 70px;
+    margin-top: 20px;
+    position: absolute;
+    top: 470px;
+    left: 200px;
+}
+
+.exploreButton:hover{
+    animation: widthIncrease 3s;
+    cursor: pointer;
+}
+
+@keyframes widthIncrease {
+    from{
+     width: 200px;
+     font-size: 15px;
+    }to{
+        width: 300px;
+        font-size: 25px;
+    }
+}
+
+.aboutDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 100px;
+    padding-right:40px;
+    padding-bottom:70px;
+    width: 500px;
+    height:500px;
+    border-radius: 10px;
+    background-color: black;
+    color: var(--text);
+    position: absolute;
+    right: 50px;
+    bottom: 30px;
+}
+
+
+.aboutDescription h2{
+    font-family: 'Rajdhani', sans-serif;
+    letter-spacing: 2px;
+    border-bottom: 4px solid white;
+    padding: 5px;
+}
+
+
+.aboutDescription p {
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 20px;
+    word-spacing: 10px;
+    margin-top: 10px;
+}
+
+.homeSection3{
+    height:800px;
+    position: relative;
+}
+
+.homeSection3 pre{
+    position: absolute;
+    right:80px;
+    top: 400px; 
+    font-size: 25px;
+}
+.sec3Book{
+    width: 800px;
+    height: 500px;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    filter: blur(8px);
+}
+
+.sec3Kindle{
+    width: 340px;
+    position: absolute;
+    bottom: 250px;
+    left: 400px;
+    border-radius: 10px ;
+}
+
+.loginButton{
+    width: 100px;
+    background-color: transparent;
+    font-size:15px;
+    height: 40px;
+    position: absolute;
+    right: 270px;
+    bottom: 300px;
+}
+
+.loginButton:hover{
+    animation: shake 2s;
+    cursor: pointer;
+}
+
+@keyframes shake {
+    0%{
+        transform: skewY(0deg);
+    }
+    50%{
+        transform: skewX(-30deg);
+    }
+    100%{
+        transform: skewY(0deg);
+    }
+}
+
+.homeSection4{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.homeSection4 pre{
+    font-size: 24px;
+}
+.contactButton{
+    width: 100px;
+    background-color: transparent;
+    font-size:15px;
+    height: 40px;
+}
+
+.contactButton:hover{
+    cursor: pointer;
+}
+
+
+
+/*FOOTER-STYLES*/
+
+.Footer{
+    height: 250px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.footerLinks ul{
+    display: flex;
+}
+.footerLinks ul li a{
+    color: white;
+}
+.footerLinks ul li a:hover{
+    cursor: pointer;
+    border-bottom:4px solid white ;
+}
+.footerLinks ul li{
+    margin-left:30px;
+}
+.FooterLogo{
+    margin: 20px;
+    font-size: 30px;
+    color: white;
+}
+.socialMedias ul{
+    display: flex;
+    justify-content: flex-start;
+}
+.socialMedias button{
+    border-radius:50px;
+    background-color: transparent;
+    border: none;
+}
+.socialMedias i{
+    padding: 10px;
+    font-size: 40px;
+    color: white;
+}
+.fa-instagram:hover{
+    color: rgb(255, 63, 185);
+}
+.fa-twitter:hover{
+    color: rgb(0, 119, 255);
+}
+.fa-github:hover{
+    color: rgb(255, 0, 0);
+
+}
+.socialMedias ul li {
+    margin-left:20px ;
+}
+.copyRight{
+    color: white;
 }

@@ -1,0 +1,44 @@
+.loginContainer{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+}
+
+.loginSection1{
+    display: flex;
+    width: 800px;
+    height: 500px;
+    border: 5px solid black;
+}
+
+.leftHalf{
+    width: 50%;
+    overflow: hidden;
+}
+.leftHalf img{
+    width: 350px;
+}
+
+.rightHalf{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.rightHalf form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.rightHalf form label{
+    margin-top: 30px;
+}
+
+.rightHalf form input{
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid black;
+}
