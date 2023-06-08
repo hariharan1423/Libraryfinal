@@ -49,6 +49,8 @@ body{
     animation-fill-mode: forwards;
 }
 
+
+
 @keyframes borderInc {
     from{
         border-bottom: 0px;
@@ -333,4 +335,11 @@ body{
 }
 .copyRight{
     color: white;
+}
+
+
+@media screen  and (max-width:960px){
+    .allBooksList{
+        height: 80%;
+    }
 }

@@ -76,7 +76,21 @@ box-shadow: 10px 10px 17px 4px rgba(255,255,255,1);
 .allBooksList::-webkit-scrollbar{
     display: none;
 }
+.pageButtons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.navigateButton{
+    width: 100px;
+    background-color: transparent;
+    font-size:15px;
+    height: 40px;
+}
+.navigateButton:hover{
+    cursor: pointer;
+}
 .BookCard{
     margin: 30px;
     width: 350px;
@@ -94,11 +108,6 @@ box-shadow: 10px 10px 17px 4px rgba(255,255,255,1);
     object-fit: contain;
 }
 
-@media screen  and (max-width:960px){
-    .allBooksList{
-        height: 80%;
-    }
-}
 
 .title{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -155,5 +164,8 @@ box-shadow: 10px 10px 17px 4px rgba(255,255,255,1);
     margin: 30px;
     flex-wrap:wrap;
 }
+
+
+
 
 

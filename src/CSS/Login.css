@@ -11,7 +11,16 @@
     height: 500px;
     border: 5px solid black;
 }
-
+.logIntoButton{
+    margin-top: 30px;
+    width: 100px;
+    background-color: transparent;
+    font-size:15px;
+    height: 40px;
+}
+.logIntoButton:hover{
+    cursor: pointer;
+}
 .leftHalf{
     width: 50%;
     overflow: hidden;
@@ -22,6 +31,7 @@
 
 .rightHalf{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 50%;

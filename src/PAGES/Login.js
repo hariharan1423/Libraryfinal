@@ -1,5 +1,8 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../CSS/Login.css";
 import signup from "../images/sign-up.jpeg";
+import {NavLink} from "react-router-dom";
+import { faRightFromBracket } from "@fortawesome/free-solid-svg-icons";
 
 const Login = () => {
   return (
@@ -17,6 +20,13 @@ const Login = () => {
             <label for="password">Password:</label>
             <input type="password" placeholder="Enter your Name..." name="password"></input>
           </form>
+         <div>
+          <NavLink to="/Home">
+            <button className="logIntoButton">
+              Login <FontAwesomeIcon icon={faRightFromBracket} />
+            </button>
+            </NavLink>
+            </div>   
         </div>
       </div>
     </div>
