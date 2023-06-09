@@ -36,7 +36,7 @@ const SearchSection = ({ books }) => {
     }
   }
 
-  console.log(yearCount);
+  // console.log(yearCount);
 
 
   return (
