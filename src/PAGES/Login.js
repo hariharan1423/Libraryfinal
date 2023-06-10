@@ -14,11 +14,11 @@ const Login = () => {
         <div className="rightHalf">
           <form>
             <label for="name">Name:</label>
-            <input type="text" placeholder="Enter your Name..." name="name"></input>
+            <input type="text" placeholder="Enter your Name..." name="name" required></input>
             <label for="email">Email:</label>
-            <input type="email" placeholder="Enter your Name..." name="email"></input>
+            <input type="email" placeholder="Enter your Name..." name="email" required></input>
             <label for="password">Password:</label>
-            <input type="password" placeholder="Enter your Name..." name="password"></input>
+            <input type="password" placeholder="Enter your Name..." name="password" required></input>
           </form>
          <div>
           <NavLink to="/Home">
