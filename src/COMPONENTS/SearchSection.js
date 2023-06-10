@@ -2,37 +2,34 @@ import { useState } from "react";
 import Book from "./Book";
 const SearchSection = ({ books }) => {
   const [search, setSearch] = useState("");
-  const array = Object.entries(books);
-  //console.log(array);
+  // const array = Object.entries(books);
+  // console.log(array);
   const results = [];
   // console.log(array[0][1].author.toLowerCase());
   let author = false;
   let year = false;
   let title = false;
-
+  // console.log(typeof(results))
   let yearCount = 0;
   let authorCount = 0;
   let titleCount = 0;
 
-  for (let i = 0; i < array.length; i++) {
-    for (let j = 1; j < array[i].length; j++) {
-      //console.log(array[0][0])
-      if (i === 0 && j === 0) {
-        continue;
-      } else if (array[i][j].author.toLowerCase() === search.toLowerCase()) {
-        //console.log(array[i][j]);
-        results[i] = array[i][j];
+  // console.log(books);
+  for (let i = 0; i < books.length; i++) {
+      if (books[i].author.toLowerCase() === search.toLowerCase()) {
+      // console.log(books[i].author);
+        results[i] = books[i];
         authorCount += 1;
         author = true;
-      } else if (array[i][j].title.toLowerCase() === search.toLowerCase()) {
-        results[i] = array[i][j];
+      } else if (books[i].title.toLowerCase() === search.toLowerCase()) {
+        results[i] = books[i];
         titleCount += 1;
         title = true;
-      } else if (array[i][j].year.toLowerCase() === search.toLowerCase()) {
-        results[i] = array[i][j];
+      } else if (books[i].year.toLowerCase() === search.toLowerCase()) {
+        // console.log(books[i].year);
+        results[i] = books[i];
         yearCount += 1;
         year = true;
-      }
     }
   }
 
