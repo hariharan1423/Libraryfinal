@@ -21,7 +21,7 @@ const Login = () => {
             <input type="password" placeholder="Enter your Name..." name="password" required></input>
           </form>
          <div>
-          <NavLink to="/Home">
+          <NavLink to="/">
             <button className="logIntoButton">
               Login <FontAwesomeIcon icon={faRightFromBracket} />
             </button>

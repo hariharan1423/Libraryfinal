@@ -117,7 +117,7 @@ box-shadow: 10px 10px 17px 4px rgba(255,255,255,1);
 
 
 .searchContainer{
-    height: 1500px;
+    min-height: 1500px;
     border-radius: 50px;
     margin: 40px;
     display: flex;
