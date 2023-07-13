@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBookOpen, faCircleInfo, faHouse, faUser } from "@fortawesome/free-solid-svg-icons";
+import { faBookOpen, faHouse, faUser } from "@fortawesome/free-solid-svg-icons";
 import { faBookBookmark } from "@fortawesome/free-solid-svg-icons";
 import { NavLink } from "react-router-dom";
 
@@ -18,9 +18,6 @@ const NavBar = () => {
             </li>
             <li>
               <NavLink to="/Books">Books <FontAwesomeIcon icon={faBookOpen} /></NavLink>
-            </li>
-            <li>
-              <NavLink to="/About">About us <FontAwesomeIcon icon={faCircleInfo} /></NavLink>
             </li>
           </ul>
         </div>
