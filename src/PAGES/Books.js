@@ -39,7 +39,6 @@ const Books = () => {
       <AllBooks books={books}/>
       <SearchSection books={books}/>
     </div>
-     <Footer/>
      </>
   );
 };
